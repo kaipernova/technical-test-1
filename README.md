@@ -22,6 +22,14 @@ POST /certificate/{id}/note         - Creates a note for a certificate
 
 **2. Write a MySQL raw query & eloquent query to get properties which has more than 5 certificates**
 
+# Notes
+```
+I spent a total of 3 hours and 20 minutes on this test across 2 sessions. I was able to complete all the tasks and added some additional features to the API. The kind of features that I would expect to see in a production environment, such as API versioning, pagination and feature testing. If I was to put more time into it, I would have also added caching and rate limiting.
+
+I also modified the SQL Dump slightly, changing "model_type" and "model_id" to "notable_type" and "notable_id" respectively, on the Notes table. This was basically entirely by preference and I could have (and maybe should have) consulted with the interviewer to see if model_type and model_id were required. There also wasn't a schema provided for the tables themselves, only the inserts, so obviously I had to make assumptions based on the data provided.
+
+The test required me to write a raw MySQL query and an Eloquent query to get properties and so I've created a new endpoint called /mtfc (More Than Five Certificates) to demonstrate both queries. They are written in the PropertyController.php file as the moreThanFiveCertificates method.
+```
 # Installation
 
 **1. Clone the repository**
